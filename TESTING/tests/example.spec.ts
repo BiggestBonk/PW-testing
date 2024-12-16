@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test'
-import { FungipediaPage } from './playwright-dev-page'
+import { FungipediaPage } from './dev-page'
 
 test('getting started should contain table of contents', async ({ page }) => {
   const Fungipedia = new FungipediaPage(page)
