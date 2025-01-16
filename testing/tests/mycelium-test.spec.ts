@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 import { FungipediaPage } from './dev-page'
 
-test('getting started should contain table of contents', async ({ page }) => {
+test('Fungipedia should contain an index', async ({ page }) => {
   const Fungipedia = new FungipediaPage(page)
   await Fungipedia.goto()
   await Fungipedia.fungipedia()
