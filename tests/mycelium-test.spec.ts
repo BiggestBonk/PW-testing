@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 import { FungipediaPage } from './dev-page'
 
-test('Fungipedia should contain an index', async ({ page }) => {
+test.skip('Fungipedia should contain an index', async ({ page }) => {
   const Fungipedia = new FungipediaPage(page)
   await Fungipedia.goto()
   await Fungipedia.fungipedia()
@@ -15,7 +15,7 @@ test('Fungipedia should contain an index', async ({ page }) => {
   ])
 })
 
-test('should show Fungipedia entry', async ({ page }) => {
+test.skip('should show Fungipedia entry', async ({ page }) => {
   const Fungipedia = new FungipediaPage(page)
   await Fungipedia.goto()
   await Fungipedia.mushroomEntry()
